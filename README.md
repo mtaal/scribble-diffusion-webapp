@@ -8,6 +8,16 @@ You draw (or upload) a ground-truth mask and a prediction mask. The app then run
 diffusion sampler with ONNX Runtime and generates a scribble that marks where the
 prediction should be corrected.
 
+## Demo
+
+**Synthetic example:** draw a ground-truth and a prediction circle, then generate a background scribble.
+
+![Synthetic example](docs/synthetic-example.gif)
+
+**Real example:** upload a real ground-truth/prediction pair, then generate a foreground scribble.
+
+![Real example](docs/real-example.gif)
+
 ## Installation
 
 Tested with Python 3.12.
@@ -56,6 +66,7 @@ Then open http://localhost:8501 (the port and theme are set in `.streamlit/confi
 ├── diffusion.py           # DDPM sampler running the ONNX denoiser
 ├── app.py                 # Entry point wrapper around scribble_app.main()
 ├── .streamlit/config.toml # Server and theme settings
+├── docs/                  # Demo GIFs used in this README
 ├── requirements.txt       # Python dependencies
 └── LICENSE                # MIT License
 ```
