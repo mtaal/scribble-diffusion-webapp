@@ -1,0 +1,12 @@
+[server]
+headless = true
+address = "0.0.0.0"
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# The drawable-canvas toolbar icons are black PNGs designed for the light theme;
+# on the dark theme they are invisible unless disabled or hovered.
+base = "light"

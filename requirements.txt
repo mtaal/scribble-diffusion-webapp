@@ -1,0 +1,11 @@
+streamlit>=1.38.0,<1.63
+streamlit-drawable-canvas>=0.8,<0.10
+svgpathtools
+svgwrite
+numpy
+pandas
+pillow
+torch
+onnxruntime
+matplotlib
+huggingface_hub>=1.5.0
